@@ -34,12 +34,13 @@ download: true
 
 
 <div class="absolute left-30px bottom-30px">
-<p>Last updated: Fall 23</p>
+<p>Last updated: Spring 24</p>
 </div>
 
 ---
 layout: center
 ---
+
 ## Table of Contents
 - Introduction to HTML
 - Brief history
@@ -53,6 +54,7 @@ layout: center
 - HTML tables
 - Multimedia and embedding
 - Validating and debugging HTML
+
 ---
 
 # Introduction
@@ -106,6 +108,7 @@ layout: center
 ---
 layout: center
 ---
+
 ## Concepts and Syntax
 
 - The elements of HTML
@@ -126,13 +129,13 @@ layout: center
 
 ## HTML Element's Attributes
 
-![HTML Element's Attribute](/images/html-attribute.svg)
+![HTML Element's Attribute](/images/html-attribute.png)
 
 ---
 
 ## HTML Document
 
-<iframe src="http://jsbin.com/dozulok/1/embed?html,output" title="HTML document Example" height="80%" width="100%"></iframe> 
+<iframe class="jsfiddle" width="100%" height="80%" src="//jsfiddle.net/kalharbi/87foLs45/1/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 - Save this as an HTML file (e.g., `index.html`) and open it up in your browser.
 
@@ -176,6 +179,7 @@ layout: center
 ---
 layout: two-cols-header
 ---
+
 # The `<body>` element
 
 ::left::
@@ -206,6 +210,7 @@ layout: two-cols-header
 ---
 layout: center
 ---
+
 # HTML elements
 
 - Text content elements: `<h1>` through `<h6>`, `<p>`, `<strong>`, and `<em>`.
@@ -222,19 +227,21 @@ layout: center
 - The `<h1>` to `<h6>` HTML elements represent six levels of section headings. 
   - `<h1>` is the highest section level and `<h6>` is the lowest.
 
-<iframe src="http://jsbin.com/hamoray/5/embed?html,output" title="HTML document Example" height="50%" width="100%"></iframe> 
+<iframe class="jsfiddle" width="100%" height="50%" src="//jsfiddle.net/kalharbi/74bjyv9s/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
 
 ---
 
-# Paragraphs `<p>`, `<strong>`, and `<em>`.
+# Paragraphs `<p>`, `<sup>`, `<sub>`, `<strong>`, and `<em>`
 - The `<p>` element represents a paragraph.
+- The `<sup>` element represents a superscript while the `<sub>` element represents a subscript.
 - The `<strong>` element is used to add strong emphasis to text. It is typically displayed in bold.
   - Screen readers will pronounce the words in `<strong>` with added stress.
 - The `<em>` element marks text that has stress emphasis. It is typically displayed in italic.
   - Screen readers will pronounce the words in `<em>` with an emphasis, using verbal stress.
-- **NOTE**: These two tags should not be used to apply italic and bold styling. Instead, use the CSS `font-style` property for that purpose.
+- The `<strong>` and `<em>` tags should not be used to apply styling. CSS should be used instead.
 
-<iframe src="http://jsbin.com/fezufab/7/edit?html,output" title="HTML document Example" height="50%" width="100%"></iframe> 
+<iframe class="jsfiddle" width="100%" height="60%" src="//jsfiddle.net/kalharbi/7s4uxwmy/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ---
 
@@ -289,7 +296,9 @@ layout: two-cols-header
 - The `<ul>` element represents an unordered list of items, typically rendered as a bulleted list.
 - It may contain a list item (`<li>` element) or another list (e.g., `<ul>` or `<ol>`) nested as deeply as desired.
 ### Demo
-<iframe src="http://jsbin.com/dutovaz/1/embed?html,output" title="HTML unordered list example" height="70%" width="100%"></iframe> 
+
+<iframe class="jsfiddle" width="100%" height="60%" title="HTML unordered list example" src="//jsfiddle.net/kalharbi/hx7Lc61v/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe> 
+
 
 
 ---
@@ -298,7 +307,9 @@ layout: two-cols-header
 - The `<ol>` element represents an ordered list of items, typically rendered as a numbered list.
 - It may contain a list item (`<li>` element) or another list (e.g., `<ul>` or `<ol>`) nested as deeply as desired.
 ### Demo
-<iframe src="http://jsbin.com/cakedey/1/embed?html,output" title="HTML ordered list example" height="70%" width="100%"></iframe> 
+
+<iframe class="jsfiddle" width="100%" height="100%" title="HTML ordered list example" src="//jsfiddle.net/kalharbi/qg9xvtm6/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe> 
+
 
 ---
 
@@ -307,8 +318,8 @@ layout: two-cols-header
 - It contains a list of terms (using the `<dt>` element) and descriptions (using the `<dd>` element).
 
 ### Demo
-<iframe src="http://jsbin.com/tujoqil/1/embed?html,output" title="HTML description list example" height="70%" width="100%"></iframe>
 
+<iframe class="jsfiddle" width="100%" height="70%" title="HTML definition list example" src="//jsfiddle.net/kalharbi/3w4qv0b9/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ---
 
@@ -318,7 +329,8 @@ layout: two-cols-header
 
 
 ### Demo
-<iframe src="http://jsbin.com/hokupum/5/embed?html,output" title="HTML image, audio, and video example" height="100%" width="100%"></iframe>
+
+<iframe class="jsfiddle" width="100%" height="100%" title="HTML image, audio, and video example" src="//jsfiddle.net/kalharbi/ug7vth46/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ---
 
@@ -328,7 +340,7 @@ layout: two-cols-header
 
 ### Demo
 
-<iframe src="http://jsbin.com/refisop/1/embed?html,output" title="HTML table example" height="70%" width="100%"></iframe>
+<iframe class="jsfiddle" width="100%" height="70%" title="HTML table example" src="//jsfiddle.net/kalharbi/3rfh6nvz/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ---
 
@@ -337,7 +349,7 @@ layout: two-cols-header
 - The `rowspan` attribute specifies the number of *rows* that a cell should span.
 ### Demo
 
-<iframe src="http://jsbin.com/curoleg/1/edit?html,output" title="HTML table colspan rowspan example" height="70%" width="100%"></iframe>
+<iframe class="jsfiddle" width="100%" height="70%" title="HTML table colspan and rowspan example" src="//jsfiddle.net/kalharbi/z0gva39p/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ---
 
@@ -358,7 +370,6 @@ layout: two-cols-header
 # HTML Sectioning elements (Demo)
 <iframe class="jsfiddle" width="100%" height="80%" src="//jsfiddle.net/kalharbi/2uwj4pz3/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-
 ---
 
 # The `<form>` element
@@ -371,7 +382,8 @@ layout: two-cols-header
 ```
 
 ### Demo
-<iframe src="http://jsbin.com/zabowuv/edit?html,output" title="HTML form example" height="70%" width="100%"></iframe>
+
+<iframe class="jsfiddle" width="100%" height="50%" title="HTML form example 1" src="//jsfiddle.net/kalharbi/4ucgt9rx/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 
 ---
@@ -379,7 +391,7 @@ layout: two-cols-header
 # The `<form>` element: complete example
 - HTML form elements include text inputs, checkboxes, dropdowns, radio buttons, textarea fields, and much more. 
 ### Demo
-<iframe src="http://jsbin.com/rojetug/1/edit?html,output" title="HTML form example" height="70%" width="100%"></iframe>
+<iframe class="jsfiddle" width="100%" height="100%" title="HTML form example 2" src="//jsfiddle.net/kalharbi/v2wpy1rm/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ---
 
@@ -416,8 +428,8 @@ layout: two-cols-header
 
 # The `<code>`, `<pre>`, and `<samp>` elements
 ### Demo
-<iframe src="http://jsbin.com/mayitoj/edit?html,output" title="HTML code, pre, and samp elements example" height="90%" width="100%"></iframe>
 
+<iframe class="jsfiddle" width="100%" height="100%" title="HTML code, pre and samp example" src="//jsfiddle.net/kalharbi/Le0pbkus/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 ---
 
 # `<iframe>` element for embedding an HTML document
@@ -427,14 +439,15 @@ layout: two-cols-header
 
 
 ```html
-<iframe src="https://www.youtube.com/embed/BgIgKcqPd4k" width="560" height="256"></iframe>
+<iframe src="https://cpit405.gitlab.io" width="560" height="256"></iframe>
 ```
-<iframe src="https://www.youtube.com/embed/BgIgKcqPd4k" width="560" height="256"></iframe>
+<iframe src="https://cpit405.gitlab.io" width="560" height="256"></iframe>
 
 
 ---
 layout: two-cols-header
 ---
+
 # HTML inline vs block elements
 HTML elements can be grouped into two categories: block level and inline elements.
 
@@ -472,6 +485,7 @@ HTML elements can be grouped into two categories: block level and inline element
 </p>
 </div>
 ```
+
 ---
 
 # HTML void elements
@@ -507,3 +521,4 @@ HTML elements can be grouped into two categories: block level and inline element
 - You can find many helpful tutorials and articles on the [MDN web documentation](https://developer.mozilla.org/en-US/docs/Web/HTML).
 
 - Coming up next: Use CSS to style your web pages! 🤩
+
