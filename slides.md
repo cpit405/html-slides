@@ -162,7 +162,8 @@ layout: center
   - Examples include character encoding, description, and viewport size.
 - It also contains other elements such as:
   - `<title>` for the document's title.
-  - `<link>` for links to CSS, JS, and custom favicons.
+  - `<link>` for links to CSS and custom favicons.
+  - `<script>` for links to external javascript files.
 
 ```html {monaco}
 <head>
