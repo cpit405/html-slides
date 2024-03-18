@@ -212,13 +212,24 @@ layout: two-cols-header
 layout: center
 ---
 
-# HTML elements
+# HTML elements by function
 
-- Text content or block level elements: `<h1>` through `<h6>`, `<p>`, `<table>`, `<strong>`, and `<em>`.
-- Inline elements: `<a>`, `<span>`, `<img>`, `<video>`, `<audio>`, and ``
-- List elements: `<ul>`, `<ol>`, and `<dl>`.
-- Sectioning elements: `<header>`, `<main>`, `<nav>`, `<footer>`, `<section>`, `<article>`, and `<aside>`.
-- Form elements: `<form>`, `<label>`, `<input>`, `<select>`, `<textarea>`, and `<button>`.
+HTML elements can be grouped by function or purpose into:
+
+- Text content: Elements that structure the content of the web page.
+  - Examples: `<h1>` through `<h6>`, and `<p>`.
+- Inline text elements: elements that define the meaning, structure, or style of a word or line.
+  - Examples: `<a>`, `<span>`, `<strong>`, and `<em>`
+- Image and multimedia: elements that define multimedia resources such as images, audio, and video.
+  - Examples: `<img>`, `<video>`, `<audio>`
+- List elements: elements that define list of items
+  - Examples: `<ul>`, `<ol>`, and `<dl>`.
+- Sectioning elements: elements that define sections of content.
+  - Examples: `<header>`, `<main>`, `<nav>`, `<footer>`, `<section>`, `<article>`, and `<aside>`.
+- Form elements: elements that can be used to create input forms.
+  - Examples: `<form>`, `<label>`, `<input>`, `<select>`, `<textarea>`, and `<button>`.
+
+
 
 ---
 
@@ -449,24 +460,16 @@ layout: two-cols-header
 layout: two-cols-header
 ---
 
-# HTML inline vs block elements
-HTML elements can be grouped into two categories: block level and inline elements.
+# HTML inline vs block elements (I)
+#### HTML elements can be grouped into two categories based on their display characteristics: block level and inline elements.
 
 ::left::
 ## Inline elements:
 - Do not start a new line
 - Can't contain block elements
-- - Avoid nesting block elements within inline elements.
+- Avoid nesting block elements within inline elements.
 - May be used to format text within a block element.
 - Examples: `<a>`, `<img>`, `<span>`, `<input>`, `<button>`, `<label>`, and `<code>`.
-
-```html{monaco}
-<!-- INCORRECT: -->
-<span><h1>Block h1 element</h1></span>
-
-<!-- CORRECT: -->
-<h1><span>Inline span element</span></h1>
-```
 
 ::right::
 
@@ -477,13 +480,34 @@ HTML elements can be grouped into two categories: block level and inline element
 - May be used to structure the content of the webpage.
 - Examples: `<div>`, `<p>`, `<ul>`, `<h1>`, `<form>`, `<table>`, and `<video>`.
 
-```html{monaco}
+
+---
+
+# HTML inline vs block elements (II)
+
+<br>
+
+## Inline elements example:
+
+```html
+<!-- INCORRECT: -->
+<span><h1>Block h1 element</h1></span>
+
+<!-- CORRECT: -->
+<h1><span>Inline span element</span></h1>
+```
+
+<br>
+
+## Block level elements example:
+
+```html
 <div> This is a block element.
-<p> This is a paragraph, which is a block element.
-<span> This is an inline element.
-<a href="#"> This is a link, which is an inline element.
-<img src="image.png" alt="This is an image, which is an inline element.">
-</p>
+  <p> This is a paragraph, which is a block element.
+    <span> This is an inline element.
+      <a href="#"> This is a link, which is an inline element.
+        <img src="image.png" alt="This is an image, which is an inline element.">
+  </p>
 </div>
 ```
 

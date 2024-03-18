@@ -1,13 +1,22 @@
-:not(pre)>code {
-	color: #444746;
-	background-color: #e9e8e8;
-}
-
-:not(pre)>code::before,
-:not(pre)>code::after {
+:not(pre) > code::before, :not(pre) > code::after {
 	content: "";
 }
 
-iframe.jsfiddle {
-	border: 1px solid #4e4e4e;
+.slidev-layout code{
+	font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+img{
+	border: 1px solid #000;
+}
+footer {
+	text-align: center;
+}
+
+.slidev-code{
+	border: #ddd solid 1px;
+}
+
+iframe.jsfiddle{
+	border: #ddd solid 1px;
 }
