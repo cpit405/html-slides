@@ -163,7 +163,7 @@ layout: center
 - It also contains other elements such as:
   - `<title>` for the document's title.
   - `<link>` for links to CSS and custom favicons.
-  - `<script>` for links to external javascript files.
+  - `<script>` for both inserting javascript code or linking to external javascript files.
 
 ```html {monaco}
 <head>
@@ -214,8 +214,8 @@ layout: center
 
 # HTML elements
 
-- Text content elements: `<h1>` through `<h6>`, `<p>`, `<strong>`, and `<em>`.
-- Inline elements: `<a>`, `<span>`, `<img>`, `<video>`, `<audio>`, and `<table>`
+- Text content or block level elements: `<h1>` through `<h6>`, `<p>`, `<table>`, `<strong>`, and `<em>`.
+- Inline elements: `<a>`, `<span>`, `<img>`, `<video>`, `<audio>`, and ``
 - List elements: `<ul>`, `<ol>`, and `<dl>`.
 - Sectioning elements: `<header>`, `<main>`, `<nav>`, `<footer>`, `<section>`, `<article>`, and `<aside>`.
 - Form elements: `<form>`, `<label>`, `<input>`, `<select>`, `<textarea>`, and `<button>`.
