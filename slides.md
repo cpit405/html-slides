@@ -1,8 +1,8 @@
 ---
 # try also 'default' to start simple
 theme: default
-title: 'HTML'
-titleTemplate: '%s - CPIT-405'
+title: "HTML"
+titleTemplate: "%s - CPIT-405"
 # apply any windi css classes to the current slide
 class: text-center
 # https://sli.dev/custom/highlighters.html
@@ -10,21 +10,34 @@ highlighter: shiki
 # show line numbers in code blocks
 lineNumbers: false
 # some information about the slides, markdown enabled
-info: | 
-    HTML: HyperText Markup Language
-# persist drawings in exports and build
-drawings:
-  persist: false
+info: |
+  HTML: HyperText Markup Language
 # page transition
 transition: slide-left
 # use UnoCSS
 css: unocss
 # Make monaco available in the exported SPA
-monaco: true 
+monaco: true
 # Make content selectable/copyable
 selectable: true
 # Make slides downloadable as PDF
 download: true
+exportFilename: html-slides
+export:
+  format: pdf
+  timeout: 30000
+  dark: false
+  withClicks: false
+  withToc: true
+# enable slide recording and drawing
+record: build
+drawings:
+  enabled: true
+  persist: false
+  presenterOnly: false
+  syncAll: true
+
+hideInToc: true
 ---
 
 
@@ -39,21 +52,13 @@ download: true
 
 ---
 layout: center
+hideInToc: true
 ---
 
-## Table of Contents
-- Introduction to HTML
-- Brief history
-- Concept and syntax
-- Basic structure of an HTML document
-- The `<head>` element for Metadata
-- The `<body>` element
-- Common HTML elements
-- Hyperlinks
-- Form elements
-- HTML tables
-- Multimedia and embedding
-- Validating and debugging HTML
+# Table of Contents
+
+<Toc columns="2" maxDepth="1" mode="all" class="toc-list"/>
+
 
 ---
 
@@ -109,7 +114,7 @@ layout: center
 layout: center
 ---
 
-## Concepts and Syntax
+# Concepts and Syntax
 
 - The elements of HTML
 - The `<!DOCTYPE`> element
@@ -133,7 +138,7 @@ layout: center
 
 ---
 
-## HTML Document
+# HTML Document
 
 <iframe class="jsfiddle" width="100%" height="80%" src="//jsfiddle.net/kalharbi/87foLs45/1/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
@@ -141,7 +146,7 @@ layout: center
 
 ---
 
-# The `!DOCTYPE` element
+## The `!DOCTYPE` element
 ```html
 <!DOCTYPE html>
 ```
@@ -233,7 +238,7 @@ HTML elements can be grouped by function or purpose into:
 
 ---
 
-# HTML Headings `<h1>` through `<h6>`
+## HTML Headings `<h1>` through `<h6>`
 
 - Heading content defines the heading of a section 
 - The `<h1>` to `<h6>` HTML elements represent six levels of section headings. 
@@ -244,7 +249,7 @@ HTML elements can be grouped by function or purpose into:
 
 ---
 
-# Paragraphs `<p>`, `<sup>`, `<sub>`, `<strong>`, and `<em>`
+## Paragraphs `<p>`, `<sup>`, `<sub>`, `<strong>`, and `<em>`
 - The `<p>` element represents a paragraph.
 - The `<sup>` element represents a superscript while the `<sub>` element represents a subscript.
 - The `<strong>` element is used to add strong emphasis to text. It is typically displayed in bold.
@@ -257,7 +262,7 @@ HTML elements can be grouped by function or purpose into:
 
 ---
 
-# `<a>` The anchor element for links 
+## `<a>` The anchor element for links 
 - The `<a>` element with its `href` attribute creates a hyperlink to a URL.
 - Links are not restricted to web pages and can include email addresses, files, phone number, JavaScript, and anything else with a URL.
 - The `target` attribute is used to indicate where to open the linked URL.
@@ -283,7 +288,7 @@ HTML elements can be grouped by function or purpose into:
 layout: two-cols-header
 ---
 
-# `<a>` The anchor element and internal links
+## `<a>` The anchor element and internal links
 
 ::left::
 
@@ -304,7 +309,7 @@ layout: two-cols-header
 
 ---
 
-# List elements: `<ul>` The unordered list element
+## List elements: `<ul>` The unordered list element
 - The `<ul>` element represents an unordered list of items, typically rendered as a bulleted list.
 - It may contain a list item (`<li>` element) or another list (e.g., `<ul>` or `<ol>`) nested as deeply as desired.
 ### Demo
@@ -315,7 +320,7 @@ layout: two-cols-header
 
 ---
 
-# List elements: `<ol>` The ordered list element
+## List elements: `<ol>` The ordered list element
 - The `<ol>` element represents an ordered list of items, typically rendered as a numbered list.
 - It may contain a list item (`<li>` element) or another list (e.g., `<ul>` or `<ol>`) nested as deeply as desired.
 ### Demo
@@ -325,7 +330,7 @@ layout: two-cols-header
 
 ---
 
-# List elements: `<dl>` The description list element
+## List elements: `<dl>` The description list element
 - The `<dl>` element represents a description list of items, typically rendered as a numbered list.
 - It contains a list of terms (using the `<dt>` element) and descriptions (using the `<dd>` element).
 
@@ -379,7 +384,7 @@ layout: two-cols-header
 
 ---
 
-# HTML Sectioning elements (Demo)
+## HTML Sectioning elements (Demo)
 <iframe class="jsfiddle" width="100%" height="80%" src="//jsfiddle.net/kalharbi/2uwj4pz3/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ---
@@ -400,14 +405,14 @@ layout: two-cols-header
 
 ---
 
-# The `<form>` element: complete example
+## The `<form>` element: complete example
 - HTML form elements include text inputs, checkboxes, dropdowns, radio buttons, textarea fields, and much more. 
 ### Demo
 <iframe class="jsfiddle" width="100%" height="100%" title="HTML form example 2" src="//jsfiddle.net/kalharbi/v2wpy1rm/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ---
 
-# More on `<input>` element types
+## More on `<input>` element types
 - The available HTML Input Types `<input type="">` are: `text`, `password`, `email`, `number`, `date`, `time`, `datetime-local`, `month`, `week`, `url`, `tel`, `range`, `color`, `checkbox`, `radio`, `file`, `hidden`, `submit`, `reset`, and `button`.
 
 ### Demo
@@ -438,13 +443,13 @@ layout: two-cols-header
 
 ---
 
-# The `<code>`, `<pre>`, and `<samp>` elements
+## The `<code>`, `<pre>`, and `<samp>` elements
 ### Demo
 
 <iframe class="jsfiddle" width="100%" height="100%" title="HTML code, pre and samp example" src="//jsfiddle.net/kalharbi/Le0pbkus/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 ---
 
-# `<iframe>` element for embedding an HTML document
+# The `<iframe>` element
 - The `<iframe>` element embeds another HTML document into the current document. 
 - This can be used to embed content from any web page, a video, or an audio file.
 - The `<iframe>` element has an attribute called `src` for specifying the URL of the content to be embedded.
@@ -460,7 +465,7 @@ layout: two-cols-header
 layout: two-cols-header
 ---
 
-# HTML inline vs block elements (I)
+# HTML inline vs block elements
 #### HTML elements can be grouped into two categories based on their display characteristics: block level and inline elements.
 
 ::left::
@@ -483,7 +488,7 @@ layout: two-cols-header
 
 ---
 
-# HTML inline vs block elements (II)
+## HTML inline vs block elements (II)
 
 <br>
 
