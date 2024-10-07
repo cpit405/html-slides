@@ -140,7 +140,7 @@ layout: center
 
 # HTML Document
 
-<iframe class="jsfiddle" width="100%" height="80%" src="//jsfiddle.net/kalharbi/87foLs45/1/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe class="jsfiddle" width="100%" height="80%" src="//jsfiddle.net/kalharbi/87foLs45/1/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" title="https://jsfiddle.net/kalharbi/87foLs45/1/"></iframe>
 
 - Save this as an HTML file (e.g., `index.html`) and open it up in your browser.
 
@@ -244,7 +244,7 @@ HTML elements can be grouped by function or purpose into:
 - The `<h1>` to `<h6>` HTML elements represent six levels of section headings. 
   - `<h1>` is the highest section level and `<h6>` is the lowest.
 
-<iframe class="jsfiddle" width="100%" height="50%" src="//jsfiddle.net/kalharbi/74bjyv9s/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe class="jsfiddle" width="100%" height="50%" src="//jsfiddle.net/kalharbi/74bjyv9s/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" title="https://jsfiddle.net/kalharbi/74bjyv9s"></iframe>
 
 
 ---
@@ -258,7 +258,7 @@ HTML elements can be grouped by function or purpose into:
   - Screen readers will pronounce the words in `<em>` with an emphasis, using verbal stress.
 - The `<strong>` and `<em>` tags should not be used to apply styling. CSS should be used instead.
 
-<iframe class="jsfiddle" width="100%" height="60%" src="//jsfiddle.net/kalharbi/7s4uxwmy/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe class="jsfiddle" width="100%" height="60%" src="//jsfiddle.net/kalharbi/7s4uxwmy/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" title="https://jsfiddle.net/kalharbi/7s4uxwmy"></iframe>
 
 ---
 
@@ -305,7 +305,7 @@ layout: two-cols-header
    ```
 ::right::
 ### Demo
-<iframe class="jsfiddle" width="100%" height="80%" title="HTML internal links example" src="//jsfiddle.net/kalharbi/dqaf3p8h/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe> 
+<iframe class="jsfiddle" width="100%" height="80%" title="HTML internal links example" src="//jsfiddle.net/kalharbi/dqaf3p8h/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" title="https://jsfiddle.net/kalharbi/dqaf3p8h/"></iframe> 
 
 ---
 
