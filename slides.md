@@ -305,7 +305,7 @@ layout: two-cols-header
    ```
 ::right::
 ### Demo
-<iframe class="jsfiddle" width="100%" height="80%" title="HTML internal links example" src="//jsfiddle.net/kalharbi/dqaf3p8h/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" title="https://jsfiddle.net/kalharbi/dqaf3p8h/"></iframe> 
+<iframe class="jsfiddle" width="100%" height="80%" src="//jsfiddle.net/kalharbi/dqaf3p8h/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" title="https://jsfiddle.net/kalharbi/dqaf3p8h/"></iframe> 
 
 ---
 
