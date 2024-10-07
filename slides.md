@@ -35,7 +35,7 @@ drawings:
   enabled: true
   persist: false
   presenterOnly: false
-  syncAll: true
+  syncAll: false
 
 hideInToc: true
 ---
